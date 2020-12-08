@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+.container{
+  background-color: #07575B;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    flex: auto;
+    & h3{
+      font-size: 20px;
+      transition: font-size 1s;
+      font-family: 'Satisfy', cursive;
+    }
+  }
+}
+
+.facebook{
+  background:linear-gradient(120deg, #3b5998, #FFFFFF);
+  background-size: 400% 400%;
+  &:hover{
+    animation: fbanim 5s infinite;
+    cursor:context-menu;
+    & h3{
+      font-size: 50px;
+    }
+  }
+}
+
+.whatsapp{
+  background:linear-gradient(45deg, #E5FFCC, #00E676, #1EBEA5, #D0E9EA, #EDF8F5, #ffffff);
+  background-size: 400% 400%;
+  &:hover{
+    animation: wspanim 5s infinite;
+    cursor:context-menu;
+    & h3{
+      font-size: 50px;
+    }
+  }
+}
+
+.instagram{
+  background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  background-size: 200% 300%;
+  &:hover{
+    animation: instaanim 5s infinite;
+    cursor:context-menu;
+    & h3{
+      font-size: 50px;
+    }
+  }
+}
+
+.twitter{
+  background:linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa, #ffffff);
+  background-size: 400% 400%;
+  &:hover{
+    animation: twitanim 5s infinite;
+    cursor:context-menu;
+    & h3{
+      font-size: 50px;
+    }
+  }
+}
+
+@keyframes fbanim {
+  0%   {color: white; background-position:0% 50%;}
+  50%  {color: black; background-position:100% 50%;}
+  100%  {color: white; background-position:0% 50%;}
+}
+
+@keyframes wspanim {
+  0%   {color: white; background-position:0% 50%;}
+  50%  {color: black; background-position:100% 50%;}
+  100%  {color: white; background-position:0% 50%;}
+}
+
+@keyframes instaanim {
+  0%   {color: white; background-position:0% 50%;}
+  50%  {color: black; background-position:100% 50%;}
+  100%  {color: white; background-position:0% 50%;}
+}
+
+@keyframes twitanim {
+  0%   {color: white; background-position:0% 50%;}
+  50%  {color: black; background-position:100% 50%;}
+  100%  {color: white; background-position:0% 50%;}
+}
